@@ -1,0 +1,170 @@
+
+/* Website colours and fonts */
+:root {
+    --main-color: #17365d;
+    --second-color: #285a8e;
+    --background-color: #f4f6f8;
+    --text-color: #222222;
+    --white: #ffffff;
+    --font: Arial, sans-serif;
+}
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--main-color);
+    color: var(--white);
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+/* Navigation */
+nav {
+    background-color: var(--second-color);
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffda79;
+    text-decoration: underline;
+}
+
+/* Attribute selector */
+nav[aria-label="Main Navigation"] {
+    width: 100%;
+}
+
+/* Main content */
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: var(--white);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    border: 1px solid #dddddd;
+}
+
+/* Pseudo-class selector */
+section:first-of-type {
+    border-top: 3px solid var(--second-color);
+}
+
+h2 {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--second-color);
+    padding-bottom: 8px;
+}
+
+h3 {
+    color: var(--second-color);
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Links */
+main a {
+    color: var(--second-color);
+    font-weight: bold;
+}
+
+main a:hover {
+    color: var(--main-color);
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+section img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Personal development bookmark */
+#biggest-lesson {
+    scroll-margin-top: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: var(--main-color);
+    color: var(--white);
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 5px;
+    font-size: 14px;
+}
+
+/* Mobile and tablet screens */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        width: 95%;
+        margin: 15px auto;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+}
